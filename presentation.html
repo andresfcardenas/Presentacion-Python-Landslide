@@ -499,25 +499,23 @@
             
             
             <section><p>Tipo de dato nativo en Python similar a la matriz asociativa, en el desarrollo web los diccionarios son muy utiles para crear cadenas json a partir de ellos.</p>
+<p>Los diccionarios se diferencian de otras estructuras de datos por estar escampadas en llaves '{ }'.</p>
 <h2>Crear un diccionario, imprimirlo e imprimir un valor asociado a el</h2>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="n">Python</span> <span class="mf">3.2</span><span class="o">.</span><span class="mi">3</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">May</span>  <span class="mi">7</span> <span class="mi">2012</span><span class="p">,</span> <span class="mo">07</span><span class="p">:</span><span class="mi">19</span><span class="p">:</span><span class="mi">49</span><span class="p">)</span> 
-<span class="lineno">2</span> <span class="p">[</span><span class="n">GCC</span> <span class="mf">4.6</span><span class="o">.</span><span class="mi">2</span><span class="p">]</span> <span class="n">on</span> <span class="n">linux2</span>
-<span class="lineno">3</span> <span class="n">Type</span> <span class="s">&quot;help&quot;</span><span class="p">,</span> <span class="s">&quot;copyright&quot;</span><span class="p">,</span> <span class="s">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;llave 1&#39;</span><span class="p">:</span> <span class="s">&#39;valor 1&#39;</span><span class="p">,</span> <span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="p">{</span><span class="s">&#39;llave 1&#39;</span><span class="p">:</span> <span class="s">&#39;valor 1&#39;</span><span class="p">,</span> <span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-<span class="lineno">7</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">])</span>
-<span class="lineno">8</span> <span class="n">valor</span> <span class="mi">1</span>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;llave 1&#39;</span><span class="p">:</span> <span class="s">&#39;valor 1&#39;</span><span class="p">,</span> <span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="p">{</span><span class="s">&#39;llave 1&#39;</span><span class="p">:</span> <span class="s">&#39;valor 1&#39;</span><span class="p">,</span> <span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">])</span>
+<span class="lineno">5</span> <span class="n">valor</span> <span class="mi">1</span>
 </pre></div>
 
 <h2>Modificar un diccionario</h2>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;nuevo valor&#39;</span> <span class="c"># Cambiar el valor de una llave</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;nuevo valor&#39;</span> <span class="c"># Cambiar el valor de una llave</span>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="lineno">3</span> <span class="p">{</span><span class="s">&#39;llave 1&#39;</span><span class="p">:</span> <span class="s">&#39;nuevo valor&#39;</span><span class="p">,</span> <span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">])</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s">&#39;llave 1&#39;</span><span class="p">])</span>
 <span class="lineno">5</span> <span class="n">nuevo</span> <span class="n">valor</span>
-<span class="lineno">6</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">del</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">llave</span> <span class="mi">1</span><span class="p">])</span> <span class="c"># Eliminando el valor de un diccionario</span>
-<span class="lineno">7</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">d</span>
+<span class="lineno">6</span> <span class="k">del</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">llave</span> <span class="mi">1</span><span class="p">])</span> <span class="c"># Eliminando el valor de un diccionario</span>
+<span class="lineno">7</span> <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="lineno">8</span> <span class="p">{</span><span class="s">&#39;llave 2&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </pre></div>
 </section>
@@ -544,11 +542,27 @@
       
       <!-- slide source: slide.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h1>Listas</h1></header>
             
+            
+            <section><p>Las listas son un tipo de dato muy flexible.</p>
+<p>Una lista es muchisimo mas que un array en Java, aunque puede usarse como array si eso es lo que realmente quieres.</p>
+<p>Una lista puede contener objetos arbitrarios y expandirse de forma dinamica segun se añaden nuevos elementos.</p>
+<p>Las listas a diferencia de los diccionarios se distinguen por estar escampadas entre corchetes '[ ]'.</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;k&#39;</span><span class="p">:</span> <span class="s">&#39;v&#39;</span><span class="p">},</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;hola&quot;</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="bp">True</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+<h2>¿Que se puede hacer con las listas?</h2>
+<ul>
+<li>Agregar elementos.</li>
+<li>Particionarlas.</li>
+<li>Se pueden buscar valores.</li>
+<li>Borrar elementos con remove() y pop() y muchisimas cosas mas!!!</li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -572,11 +586,24 @@
       
       <!-- slide source: slide.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h1>Tuplas</h1></header>
             
+            
+            <section><p>Las tuplas son una estructura de datos inmutable, en pocas palabras, una tupla no puede cambiar una vez sea creada.</p>
+<p>Las tuplas a diferencia de las listas y los diccionarios se declaran con parentesis '( )'.</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">tupla</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;hola&quot;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">tupla</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="lineno">3</span> <span class="mi">1</span>
+</pre></div>
+
+<p>Las tuplas no tienen metodos como las listas o los diccionarios, esto se debe al hecho de que son inmutables.</p>
+<h1>Y entonces, ¿Para que sirven las tuplas?</h1>
+<p>Se trata de una estructura de datos segura y mas rapida que las listas, se usan tuplas cuando queremos definir valores que son constantes y que obviamente nunca cambiaran.</p>
+<p>Asi que si la idea es mantener valores contantes en nuestra aplicacion, la mejor eleccion seria  una tupla en vez de usar una lista.</p>
+<p>Este tipo de practicas hace el codigo muchisimo mas seguro.</p></section>
             
           </div>
           <div class="presenter_notes">

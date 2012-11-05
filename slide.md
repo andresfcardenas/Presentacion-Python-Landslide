@@ -3,19 +3,14 @@
 ---
 
 # Me presento #
-
 ## Andres F. Cardenas ##
-
 ## Desarrollador web Python/Django ##
-
 ### akardenasjimenez@gmail.com ######
-
 ### @andresfcardenas ######
 
 ---
 
 # Motivos para dar esta charla #
-
 1. Mostrar una excelente alternativa para el desarrollo de software
 2. Demostrar que es una herramienta robusta
 3. Aclarar mitos que giran entorno a este lenguaje
@@ -40,7 +35,6 @@
 ---
 
 # Caracteristicas #
-
 * Sintaxis clara y limpia -> Codigo legible
 * Lenguaje interpretado (Practico para hace scripts)
 * Flexible
@@ -54,7 +48,6 @@
 ---
 
 # Por qué Python #
-
 * Cuando se lee codigo Python, se lee como si se tratara de lenguaje natural
 * Dinamico al no tener que declarar variables ni argumentos
 * Tipos de datos de alto nivel
@@ -118,38 +111,71 @@
 ---
 
 # Diccionarios #
-
 Tipo de dato nativo en Python similar a la matriz asociativa, en el desarrollo web los diccionarios son muy utiles para crear cadenas json a partir de ellos.
+
+Los diccionarios se diferencian de otras estructuras de datos por estar escampadas en llaves '{ }'.
 
 ## Crear un diccionario, imprimirlo e imprimir un valor asociado a el ##
     !python
-    Python 3.2.3 (default, May  7 2012, 07:19:49) 
-    [GCC 4.6.2] on linux2
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> d = {'llave 1': 'valor 1', 'llave 2': 2}
-    >>> print(d)
+    d = {'llave 1': 'valor 1', 'llave 2': 2}
+    print(d)
     {'llave 1': 'valor 1', 'llave 2': 2}
-    >>> print(d['llave 1'])
+    print(d['llave 1'])
     valor 1
 
 ## Modificar un diccionario ##
     !python
-    >>> d['llave 1'] = 'nuevo valor' # Cambiar el valor de una llave
-    >>> print(d)
+    d['llave 1'] = 'nuevo valor' # Cambiar el valor de una llave
+    print(d)
     {'llave 1': 'nuevo valor', 'llave 2': 2}
-    >>> print(d['llave 1'])
+    print(d['llave 1'])
     nuevo valor
-    >>> del(d[llave 1]) # Eliminando el valor de un diccionario
-    >>> print d
+    del(d[llave 1]) # Eliminando el valor de un diccionario
+    print(d)
     {'llave 2': 2}
 
 ---
 
 # Listas #
+Las listas son un tipo de dato muy flexible.
+
+Una lista es muchisimo mas que un array en Java, aunque puede usarse como array si eso es lo que realmente quieres.
+
+Una lista puede contener objetos arbitrarios y expandirse de forma dinamica segun se añaden nuevos elementos.
+
+Las listas a diferencia de los diccionarios se distinguen por estar escampadas entre corchetes '[ ]'.
+
+    !python
+    lista = [1, {'k': 'v'}, 3, "hola", 3.6, [1, 2, 3], True]
+    print(lista[0])
+
+## ¿Que se puede hacer con las listas? ##
+
+* Agregar elementos.
+* Particionarlas.
+* Se pueden buscar valores.
+* Borrar elementos con remove() y pop() y muchisimas cosas mas!!!
 
 ---
 
 # Tuplas #
+Las tuplas son una estructura de datos inmutable, en pocas palabras, una tupla no puede cambiar una vez sea creada.
+
+Las tuplas a diferencia de las listas y los diccionarios se declaran con parentesis '( )'.
+
+    !python
+    tupla = (1, 2, 3, "hola")
+    print(tupla[0])
+    1
+
+Las tuplas no tienen metodos como las listas o los diccionarios, esto se debe al hecho de que son inmutables.
+
+# Y entonces, ¿Para que sirven las tuplas?
+Se trata de una estructura de datos segura y mas rapida que las listas, se usan tuplas cuando queremos definir valores que son constantes y que obviamente nunca cambiaran.
+
+Asi que si la idea es mantener valores contantes en nuestra aplicacion, la mejor eleccion seria  una tupla en vez de usar una lista.
+
+Este tipo de practicas hace el codigo muchisimo mas seguro.
 
 ---
 
