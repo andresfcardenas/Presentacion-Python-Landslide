@@ -72,6 +72,21 @@
 
 ---
 
+# El interprete de Python #
+El interprete de Python es de las mejores herramientas que puede tener este lenguaje.
+
+En el puedes probar rapidamente codigo, hacer programas desechables, probar funcionalidades del lenguaje... etc.
+
+Se ejecuta en el terminal con el comando 'python' o 'python3' de pendiendo de que version de Python tengas instalada
+
+## Interprete Python 2 ##
+![python2](img/python2_int.png)
+
+## Interprete Python 3 ##
+![python3](img/python3_int.png)
+
+---
+
 # Pequeño ejemplo de la sintaxis #
     !python
     class Player:
@@ -104,6 +119,46 @@
         while True:
             ...
 
+---
+
+# Tipos de datos y Operadores #
+
+---
+
+# Tipos de datos #
+* Int (enteros) = 1, 2, 3
+* Float (Numeros de punto flotante) = 3.1, 5.4, 1.0
+* Decimal (Numeros de punto flotante mas precisos) = Decimal('0.1428571428571428571428571429')
+* Complex (Numero con parte imaginaria) = 2.1 +2.8j
+* Str (Cadenas de texto) = 'Cadena de texto'
+* List (Listas) = [1, 2, 3]
+* Tuple (Tuplas) (1, 2, 3)
+* Dict (Diccionarios) = {'clave': 1}
+* Bool = (Booleanos) = True
+
+---
+
+# Operadores aritmenticos #
+* '+' = Suma
+* '-' = Resta
+* '*' = Multiplicacion
+* ** = Exponente
+* / = Division
+* // = Division entera
+* % = Modulo
+
+---
+
+# Operadores logicos o condicionales #
+* 'and' = ¿se cunple a y b?
+* 'or' = ¿se cumple a o b?
+* 'not' = a = not True --> a seria igual a False
+* '==' = ¿Son iguales a y b?
+* '!=' = ¿Son diferentes a y b?
+* '<' = Menor que
+* '>' = Mayor que
+* '<=' = Menor o igual que
+* '>=' = Mayor o igual que
 ---
 
 # Estructuras de datos #
@@ -179,7 +234,23 @@ Este tipo de practicas hace el codigo muchisimo mas seguro.
 
 ---
 
-# Bucles #
+# Bucle For #
+Python como en mucho lenguajes tambien cuenta con bucles for.
+
+La sintaxis de este bucle en Python es un tanto distinta a la sintaxis del bucle for en Java o C++.
+
+Digamos que tenemos una lista como la siguiente:
+
+    !python
+    lista = [1, 2, 3]
+
+y que queremos iterar sobre cada uno de los elementos de la lista, e imprimir por consola cada uno de sus elementos:
+
+    !python
+    for elemento in lista:
+        print elemento
+
+Y obviamente con este bucle tambien se puede iterar sobre diccionarios, tuplas y demas estructuras de datos.
 
 ---
 
