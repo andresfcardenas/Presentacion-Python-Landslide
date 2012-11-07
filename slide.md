@@ -30,7 +30,43 @@
 
 ---
 
+# Solo 2 mitos por aclarar #
+
+---
+
+# 1. ¡Es algo nuevo, esta poco probado! #
+
+---
+
+# Se desarrolla desde 1991 #
+
+---
+
 # Guido van Rossum ![guido](img/guido.jpg) #
+
+---
+
+# 4 años antes de Java #
+
+---
+
+# 10 años antes que C# #
+
+---
+
+# Y tan antiguo como Visual Basic #
+
+---
+
+# 2. Es lento #
+
+---
+
+# Hay que saber usar las librerias optimizadas #
+
+---
+
+# Se ha trabajado en la optimizacion del lenguaje #
 
 ---
 
@@ -95,19 +131,6 @@ Se ejecuta en el terminal con el comando 'python' o 'python3' de pendiendo de qu
         def __init__(self):
             self.score = REGULATORY_SCORES[0]
 
-        def modify_score(self,p , other_item=None, printed=True):
-            """Modifica el puntaje del jugador
-            que se le pasa como parametro.
-            """
-            if other_item == None:
-                self.score = REGULATORY_SCORES[
-                    REGULATORY_SCORES.index(self.score) + 1
-                ]
-            elif other_item > 3 and other_item < 7:
-                self.score = REGULATORY_SCORES[other_item]
-            if printed:
-                print "Player {0} {1}\n".format(p, self.get_score())
-
         def get_score(self):
             """Retorna el puntaje del jugador
             """
@@ -119,6 +142,11 @@ Se ejecuta en el terminal con el comando 'python' o 'python3' de pendiendo de qu
         while True:
             ...
 
+## Para tener en cuenta ##
+* No hay llaves '{ }' que separen bloques de codigo, tampoco es necesario usar ';' como en C/C++ o Java.
+* Los bloques de codigo se diferencian por su indentacion.
+* Tipado dinamico, es decir no es necesario especificar el tipo de dato en una variable.
+* La sintaxis simple y elegante, hace que programar en Python sea muy divertido.
 ---
 
 # Tipos de datos y Operadores #
@@ -159,6 +187,7 @@ Se ejecuta en el terminal con el comando 'python' o 'python3' de pendiendo de qu
 * '>' = Mayor que
 * '<=' = Menor o igual que
 * '>=' = Mayor o igual que
+
 ---
 
 # Estructuras de datos #
@@ -251,6 +280,26 @@ y que queremos iterar sobre cada uno de los elementos de la lista, e imprimir po
         print elemento
 
 Y obviamente con este bucle tambien se puede iterar sobre diccionarios, tuplas y demas estructuras de datos.
+
+---
+
+# ¿Quienes usan Python? #
+
+* Google.
+    + Mail.
+    + Groups.
+    + Maps.
+    + App Engine.
+    + YouTube
+* Yahoo.
+* NASA.
+* Distribuciones GNU/Linux.
+* Apple.
+* Y muchisimas startups.
+
+---
+
+![aplaudir](img/exito.jpg)
 
 ---
 
