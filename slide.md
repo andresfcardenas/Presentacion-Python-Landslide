@@ -30,7 +30,7 @@
 
 ---
 
-# Solo 2 mitos por aclarar #
+# Solo 3 mitos por aclarar #
 
 ---
 
@@ -70,6 +70,18 @@
 
 ---
 
+# 3. No tiene estandares de codificacion #
+
+---
+
+# PEP8 #
+
+---
+
+# Guido van Rossum y Barry Warsaw #
+
+---
+
 # Caracteristicas #
 * Sintaxis clara y limpia -> Codigo legible
 * Lenguaje interpretado (Practico para hace scripts)
@@ -84,6 +96,7 @@
 ---
 
 # Por qué Python #
+* Licencia libre PSFL (Python Software Fundation License), que es compatible con la licencia GPL.
 * Cuando se lee codigo Python, se lee como si se tratara de lenguaje natural
 * Dinamico al no tener que declarar variables ni argumentos
 * Tipos de datos de alto nivel
@@ -283,6 +296,22 @@ Y obviamente con este bucle tambien se puede iterar sobre diccionarios, tuplas y
 
 ---
 
+# Python IDEs #
++ Komodo
++ PyCharm
++ PyDev (Eclipse)
++ Wing IDE
++ PyStudio
++ SPE
++ NINJA-IDE
++ Aptana Studio 3
++ MonkeyStudio
++ BoaConstructor
++ Visual Python
++ Python Tools for Visual Studio
+
+---
+
 # ¿Quienes usan Python? #
 
 * Google.
@@ -299,8 +328,18 @@ Y obviamente con este bucle tambien se puede iterar sobre diccionarios, tuplas y
 
 ---
 
-![aplaudir](img/exito.jpg)
+# Si usamos Python todo es un ![aplaudir](img/exito.jpg) #
 
 ---
 
 # Muchas Gracias!!! ![aplaudir](img/aplaudir.gif) Preguntas? #
+
+---
+
+# Me #
+## Andres F. Cardenas ##
+## Desarrollador web Python/Django ##
+### akardenasjimenez@gmail.com ######
+### @andresfcardenas ######
+
+---
